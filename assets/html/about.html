@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
@@ -16,35 +17,34 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
 
     <!-- Font Montserrat -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="../css/global.css" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
-
   <body>
     <header id="header">
       <section class="menu">
-        <a href="./index.html" class="menu-logo">
-          <img src="./assets/images/TrustVet-logo.jpg" alt="" />
+        <a href="../../index.html" class="menu-logo">
+          <img src="../images/TrustVet-logo.jpg" alt="" />
         </a>
 
         <ul class="menu-list">
           <li class="menu-item">
-            <a href="./index.html" class="menu-item-link">
+            <a href="../../index.html" class="menu-item-link">
               <span class="menu-item-text">Trang chủ</span>
               <!-- <i class="menu-item-icon fa-solid fa-caret-down"></i> -->
             </a>
           </li>
 
           <li class="menu-item">
-            <a href="./assets/html/about.html" class="menu-item-link">
+            <a href="./about.html" class="menu-item-link">
               <span class="menu-item-text">Về chúng tôi</span>
             </a>
           </li>
@@ -89,36 +89,30 @@
           </div>
         </form>
       </section>
-      
     </header>
 
     <main>
-      <section class="service">
-        <h3 class="service-heading center">Ở đây chúng tôi có</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <img src="./assets/images/petHotel.jpg" alt="" />
-          </li>
-          <li class="service-item">
-            <img src="./assets/images/caoVoiRangPet.jpg" alt="" />
-          </li>
-          <li class="service-item">
-            <img src="./assets/images/tiemVaccinePet.jpg" alt="" />
-          </li>
-          <li class="service-item">
-            <img src="./assets/images/trietSanPet.jpg" alt="" />
-          </li>
-        </ul>
-      </section>
-      <section class="team">
-        <h3 class="team-heading center color-white">
-          Với đội ngũ bác sĩ uy tín
-        </h3>
-        <div class="team-image">
-          <img src="./assets/images/teamTrustVet.jpg" alt="" />
-        </div>
-      </section>
+        <section class="about">
+            <div class="about-video">
+                <iframe width="550" height="300" src="https://www.youtube.com/embed/KXuVllBDfrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+          <div class="about-desc">
+            <h3 class="about-heading center">Về chúng tôi</h3>
+            <p class="about-text center">TrustVet Animal Clinic được thành lập vào năm 2013 với tâm huyết của Dr. Diệp Ngọc Trúc sau thời gian dài học tập và làm việc tại các bệnh viện ở Nhật Bản, Thái Lan và Việt Nam. Với mong muốn đem kiến thức và kinh nghiệm đã tích luỹ được từ những nền thú y tiên tiến về với cộng đồng người nuôi thú cưng Việt Nam, Dr. Diệp Ngọc Trúc đã xây dựng đội ngũ y bác sĩ có chuyên môn cao, tận tâm và hơn hết cả là giàu tình thương với động vật. Từ khi thành lập đến nay, TrustVet Animal Clinic liên tục phát triển về mọi mặt : đội ngũ y bác sĩ thường xuyên được cập nhật kiến thức thông qua các chương trình đào tạo quốc tế, cơ sở vật chất phục vụ cho việc chăm sóc, chẩn đoán điều trị ngày càng được nâng cấp, ý thức về phúc lợi động vật không ngừng lan toả. </p>
+          </div>
+        </section>
+
+        <section class="member">
+            <h3 class="member-heading center color-white">Hình ảnh của chúng tôi</h3>
+            <div class="member-image">
+                <img src="../images/team.jpg" alt="">
+                <img src="../images/team2.jpg" alt="">
+            </div>
+            <p class="member-title center color-white">Ảnh chụp tại cơ sở Nguyễn Kiệm, Gò Vấp</p>
+        </section>
     </main>
+
     <footer id="footer">
       <section class="contact">
         <h4 class="contact-heading">Liên hệ với chúng tôi</h4>
@@ -142,16 +136,16 @@
         </p>
       </section>
     </footer>
-
-    <script type="text/javascript">
-      const bookingButton = document.querySelectorAll('.booking-btn');
-      const modal = document.querySelector('.modal')
-      
-      for(let i = 0; i < bookingButton.length; i++) {
-        bookingButton[i].addEventListener('click', function() {
-          modal.classList.toggle('is-active');
-        })
-      }
-    </script>
   </body>
+
+  <script type="text/javascript">
+    const bookingButton = document.querySelectorAll('.booking-btn');
+    const modal = document.querySelector('.modal')
+    
+    for(let i = 0; i < bookingButton.length; i++) {
+      bookingButton[i].addEventListener('click', function() {
+        modal.classList.toggle('is-active');
+      })
+    }
+  </script>
 </html>

@@ -1,253 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font Montserrat -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+  <!-- Font Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/global.css" />
 
-  <body>
-    <header id="header">
-      <section class="menu">
-        <a href="./index.html" class="menu-logo">
-          <img src="./assets/images/TrustVet-logo.jpg" alt="" />
-        </a>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a href="./index.html" class="menu-item-link">
-              <span class="menu-item-text">Trang chủ</span>
-              <!-- <i class="menu-item-icon fa-solid fa-caret-down"></i> -->
-            </a>
-          </li>
-        </ul>
+<body>
+  <header id="header">
+    <img
+      src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTNnNzFncDIzejVqcjBlandiajQ1ZTlsN3Myb3U3M3poN2c2dmwwcCZlcD12MV9naWZzX3NlYXJjaCZjdD1z/bjE9JbNSckM0w/source.gif"
+      alt="" class="header-gif" />
+    <section class="menu">
+      <a href="./index.html" class="menu-logo">
+        <img src="./assets/images/TrustVet-logo.jpg" alt="" />
+      </a>
 
-        <div class="menu-icon">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="./index.html" class="menu-item-link">
+            <span class="menu-item-text">Trang chủ</span>
+            <!-- <i class="menu-item-icon fa-solid fa-caret-down"></i> -->
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="./index.html" class="menu-item-link">
+            <span class="menu-item-text">Dịch vụ</span>
+            <!-- <i class="menu-item-icon fa-solid fa-caret-down"></i> -->
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="./index.html" class="menu-item-link">
+            <span class="menu-item-text">Thức ăn</span>
+            <i class="menu-item-icon fa-solid fa-caret-down"></i>
+            <ul class="list">
+              <li class="item">Hạt chó mèo</li>
+              <li class="item">Pate chó mèo</li>
+            </ul>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="./index.html" class="menu-item-link">
+            <span class="menu-item-text">Phụ kiện</span>
+            <!-- <i class="menu-item-icon fa-solid fa-caret-down"></i> -->
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu-icon">
+        <a href="#" class="menu-item-link">
           <i class="fa-solid fa-hand-holding-heart"></i>
-        </div>
-      </section>
-
-      <section class="booking">
-        <p class="booking-text">Đặt lịch khám <br />cho thú cưng của bạn</p>
-        <button class="booking-btn">Tại đây</button>
-      </section>
-
-      <section class="modal">
-        <form action="" class="booking-form">
-          <h4 class="booking-heading center">Đặt lịch khám</h4>
-          <!-- tên + sdt + thời gian gặp mặt + tên thú cưng + mô tả bệnh -->
-          <div class="booking-group">
-            <label for="" class="booking-label">Họ & Tên Khách hàng</label>
-            <input type="text" class="booking-input" />
+          <div class="menu-donate">
+            <img src="./assets/images/donateMomo.jpg" alt="" />
           </div>
-          <div class="booking-group">
-            <label for="" class="booking-label">Số điện thoại</label>
-            <input type="text" class="booking-input" />
-          </div>
-          <div class="booking-group">
-            <label for="" class="booking-label">Thời gian gặp mặt</label>
-            <input type="datetime-local" class="booking-input" />
-          </div>
-          <div class="booking-group">
-            <label for="" class="booking-label">Tên Thú cưng</label>
-            <input type="text" class="booking-input" />
-          </div>
-          <div class="booking-group">
-            <label for="" class="booking-label">Mô tả bệnh</label>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              class="booking-input"
-            ></textarea>
-          </div>
-          <div class="booking-group">
-            <button class="booking-btn">Gửi đi</button>
-          </div>
-        </form>
-      </section>
-    </header>
+        </a>
+      </div>
+    </section>
 
-    <main>
-      <section class="about">
-        <div class="about-video">
-          <iframe
-            width="550"
-            height="300"
-            src="https://www.youtube.com/embed/KXuVllBDfrQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+    <section class="booking">
+      <p class="booking-text">Đặt lịch khám <br />cho thú cưng của bạn</p>
+      <button class="booking-btn">Tại đây</button>
+    </section>
+
+    <section class="modal">
+      <form action="" class="booking-form">
+        <h4 class="booking-heading center">Đặt lịch khám</h4>
+        <!-- tên + sdt + thời gian gặp mặt + tên thú cưng + mô tả bệnh -->
+        <div class="booking-group">
+          <label for="" class="booking-label">Họ & Tên Khách hàng</label>
+          <input type="text" class="booking-input" />
         </div>
-
-        <div class="about-desc">
-          <h3 class="about-heading center">Về chúng tôi</h3>
-          <p class="about-text center">
-            TrustVet Animal Clinic được thành lập vào năm 2013 với tâm huyết của
-            Dr. Diệp Ngọc Trúc sau thời gian dài học tập và làm việc tại các
-            bệnh viện ở Nhật Bản, Thái Lan và Việt Nam. Với mong muốn đem kiến
-            thức và kinh nghiệm đã tích luỹ được từ những nền thú y tiên tiến về
-            với cộng đồng người nuôi thú cưng Việt Nam, Dr. Diệp Ngọc Trúc đã
-            xây dựng đội ngũ y bác sĩ có chuyên môn cao, tận tâm và hơn hết cả
-            là giàu tình thương với động vật. Từ khi thành lập đến nay, TrustVet
-            Animal Clinic liên tục phát triển về mọi mặt : đội ngũ y bác sĩ
-            thường xuyên được cập nhật kiến thức thông qua các chương trình đào
-            tạo quốc tế, cơ sở vật chất phục vụ cho việc chăm sóc, chẩn đoán
-            điều trị ngày càng được nâng cấp, ý thức về phúc lợi động vật không
-            ngừng lan toả.
-          </p>
+        <div class="booking-group">
+          <label for="" class="booking-label">Số điện thoại</label>
+          <input type="text" class="booking-input" />
         </div>
-      </section>
-
-      <section class="team">
-        <h3 class="team-heading center color-white">
-          Với đội ngũ bác sĩ uy tín
-        </h3>
-        <div class="team-image">
-          <img src="./assets/images/teamTrustVet.jpg" alt="" />
+        <div class="booking-group">
+          <label for="" class="booking-label">Thời gian gặp mặt</label>
+          <input type="datetime-local" class="booking-input" />
         </div>
-      </section>
-
-      <section class="service">
-        <h3 class="service-heading center">Với các dịch vụ tốt nhất</h3>
-        <ul class="service-list">
-          <li class="service-item">Cấp cứu 24/7</li>
-          <li class="service-item">Khám sức khỏe định kì cho thú cưng</li>
-          <li class="service-item">Phẫu thuật thú cưng</li>
-          <li class="service-item">Dịch vụ chích ngừa thú cưng</li>
-          <li class="service-item">Chăm sóc răng miệng thú cưng</li>
-          <li class="service-item">Phối giống chó</li>
-          <li class="service-item">Phối giống mèo</li>
-          <li class="service-item">Bác sĩ thú y tại nhà</li>
-          <li class="service-item">Khách sạn chó mèo</li>
-          <li class="service-item">Pet Grooming & Spa</li>
-          <li class="service-item">Trạm thú y</li>
-          <li class="service-item">Hỏa táng thú cưng</li>
-        </ul>
-      </section>
-
-      <section class="product">
-        <h3 class="product-heading center">Với sản phẩm tốt nhất</h3>
-        <ul class="product-list">
-          <li class="product-item">
-            <span class="product-text">Pate chó mèo</span>
-          </li>
-          <li class="product-item">
-            <span class="product-text">Hạt chó mèo</span>
-          </li>
-
-          <li class="product-item">
-            <span class="product-text">Phụ kiện thú cưng</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="rate">
-        <h3 class="rate-heading center">Đánh giá của khách hàng về TrustVet</h3>
-        <ul class="rate-list">
-          <li class="rate-item">
-            <div class="rate-block">
-              <span class="rate-text">Đánh giá cơ sở quận Gò Vấp</span>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62707.44601488127!2d106.63471852528181!3d10.794809839534071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e2503fbd6d%3A0x56f420d09e51e266!2sTrustVet%20Animal%20Clinic%2F%20Ph%C3%B2ng%20Kh%C3%A1m%20Th%C3%BA%20Y%20TrustVet!5e0!3m2!1svi!2s!4v1688650786413!5m2!1svi!2s"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="rate-map"
-              ></iframe>
-            </div>
-
-            <img
-              src="./assets/images/danh gia Go Vap.png"
-              alt=""
-              class="rate-image"
-            />
-          </li>
-          <li class="rate-item">
-            <div class="rate-block">
-              <span class="rate-text">Đánh giá cơ sở quận 10</span>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62712.662800372644!2d106.60132472167969!3d10.769781600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fab606658b1%3A0x3802fac4656b48de!2sTrustVet%20Animal%20Clinic%20Q10!5e0!3m2!1svi!2s!4v1688650805563!5m2!1svi!2s"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="rate-map"
-              ></iframe>
-            </div>
-
-            <img
-              src="./assets/images/danh gia Q10.png"
-              alt=""
-              class="rate-image"
-            />
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer id="footer">
-      <section class="contact">
-        <h5 class="contact-heading">Liên hệ với chúng tôi</h5>
-        <div class="contact-icon">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-instagram"></i>
+        <div class="booking-group">
+          <label for="" class="booking-label">Tên Thú cưng</label>
+          <input type="text" class="booking-input" />
         </div>
-        <div class="contact-phone">
-          <p>0949 911 186</p>
-          <p>0948 911 186</p>
+        <div class="booking-group">
+          <label for="" class="booking-label">Mô tả bệnh</label>
+          <textarea name="" id="" cols="30" rows="5" class="booking-input"></textarea>
         </div>
-      </section>
-      <section class="address">
-        <h5 class="address-heading">Địa chỉ</h5>
-        <p class="address-text">
-          843/4 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh
+        <div class="booking-group">
+          <button class="booking-btn">Gửi đi</button>
+        </div>
+      </form>
+    </section>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="about-video">
+        <iframe width="550" height="300" src="https://www.youtube.com/embed/KXuVllBDfrQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="about-desc">
+        <h3 class="about-heading center">Về chúng tôi</h3>
+        <p class="about-text center">
+          TrustVet Animal Clinic được thành lập vào năm 2013 với tâm huyết của
+          Dr. Diệp Ngọc Trúc sau thời gian dài học tập và làm việc tại các
+          bệnh viện ở Nhật Bản, Thái Lan và Việt Nam. Với mong muốn đem kiến
+          thức và kinh nghiệm đã tích luỹ được từ những nền thú y tiên tiến về
+          với cộng đồng người nuôi thú cưng Việt Nam, Dr. Diệp Ngọc Trúc đã
+          xây dựng đội ngũ y bác sĩ có chuyên môn cao, tận tâm và hơn hết cả
+          là giàu tình thương với động vật. Từ khi thành lập đến nay, TrustVet
+          Animal Clinic liên tục phát triển về mọi mặt : đội ngũ y bác sĩ
+          thường xuyên được cập nhật kiến thức thông qua các chương trình đào
+          tạo quốc tế, cơ sở vật chất phục vụ cho việc chăm sóc, chẩn đoán
+          điều trị ngày càng được nâng cấp, ý thức về phúc lợi động vật không
+          ngừng lan toả.
         </p>
-        <p class="address-text">
-          645 Đ. Lê Hồng Phong, Phường 10, Quận 10, Thành phố Hồ Chí Minh
-        </p>
-      </section>
-    </footer>
+      </div>
+    </section>
 
-    <script type="text/javascript">
-      const bookingButton = document.querySelectorAll(".booking-btn");
-      const modal = document.querySelector(".modal");
+    <section class="team">
+      <h3 class="team-heading center color-white">
+        Với đội ngũ bác sĩ uy tín
+      </h3>
+      <div class="team-image">
+        <img src="./assets/images/teamTrustVet.jpg" alt="" />
+      </div>
+    </section>
 
-      for (let i = 0; i < bookingButton.length; i++) {
-        bookingButton[i].addEventListener("click", function () {
-          modal.classList.toggle("is-active");
-        });
-      }
-    </script>
-  </body>
+    <section class="service">
+      <h3 class="service-heading center">Với các dịch vụ tốt nhất</h3>
+      <ul class="service-list">
+        <li class="service-item">Cấp cứu 24/7</li>
+        <li class="service-item">Khám sức khỏe định kì cho thú cưng</li>
+        <li class="service-item">Phẫu thuật thú cưng</li>
+        <li class="service-item">Dịch vụ chích ngừa thú cưng</li>
+        <li class="service-item">Chăm sóc răng miệng thú cưng</li>
+        <li class="service-item">Phối giống chó</li>
+        <li class="service-item">Phối giống mèo</li>
+        <li class="service-item">Bác sĩ thú y tại nhà</li>
+        <li class="service-item">Khách sạn chó mèo</li>
+        <li class="service-item">Pet Grooming & Spa</li>
+        <li class="service-item">Trạm thú y</li>
+        <li class="service-item">Hỏa táng thú cưng</li>
+      </ul>
+    </section>
+
+    <section class="product">
+      <h3 class="product-heading center">Với sản phẩm tốt nhất</h3>
+      <ul class="product-list">
+        <li class="product-item">
+          <span class="product-text">Pate chó mèo</span>
+        </li>
+        <li class="product-item">
+          <span class="product-text">Hạt chó mèo</span>
+        </li>
+
+        <li class="product-item">
+          <span class="product-text">Phụ kiện thú cưng</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="rate">
+      <h3 class="rate-heading center">Đánh giá của khách hàng về TrustVet</h3>
+      <ul class="rate-list">
+        <li class="rate-item">
+          <div class="rate-block">
+            <span class="rate-text">Đánh giá cơ sở quận Gò Vấp</span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62707.44601488127!2d106.63471852528181!3d10.794809839534071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e2503fbd6d%3A0x56f420d09e51e266!2sTrustVet%20Animal%20Clinic%2F%20Ph%C3%B2ng%20Kh%C3%A1m%20Th%C3%BA%20Y%20TrustVet!5e0!3m2!1svi!2s!4v1688650786413!5m2!1svi!2s"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="rate-map"></iframe>
+          </div>
+
+          <img src="./assets/images/danh gia Go Vap.png" alt="" class="rate-image" />
+        </li>
+        <li class="rate-item">
+          <div class="rate-block">
+            <span class="rate-text">Đánh giá cơ sở quận 10</span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62712.662800372644!2d106.60132472167969!3d10.769781600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fab606658b1%3A0x3802fac4656b48de!2sTrustVet%20Animal%20Clinic%20Q10!5e0!3m2!1svi!2s!4v1688650805563!5m2!1svi!2s"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="rate-map"></iframe>
+          </div>
+
+          <img src="./assets/images/danh gia Q10.png" alt="" class="rate-image" />
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer id="footer">
+    <section class="contact">
+      <h5 class="contact-heading">Liên hệ với chúng tôi</h5>
+      <div class="contact-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="contact-phone">
+        <p>0949 911 186</p>
+        <p>0948 911 186</p>
+      </div>
+    </section>
+    <section class="address">
+      <h5 class="address-heading">Địa chỉ</h5>
+      <a href="https://goo.gl/maps/Twt4Yct8HxWzYv858" class="address-text color-white" target="_blank">
+        843/4 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh
+      </a>
+
+      <br />
+
+      <a href="https://goo.gl/maps/48EmH1VU7iQYGmvT7" class="address-text color-white" target="_blank">
+        645 Đ. Lê Hồng Phong, Phường 10, Quận 10, Thành phố Hồ Chí Minh
+      </a>
+    </section>
+  </footer>
+
+  <script type="text/javascript">
+    const bookingButton = document.querySelectorAll(".booking-btn");
+    const modal = document.querySelector(".modal");
+
+    for (let i = 0; i < bookingButton.length; i++) {
+      bookingButton[i].addEventListener("click", function () {
+        modal.classList.toggle("is-active");
+      });
+    }
+  </script>
+</body>
+
 </html>

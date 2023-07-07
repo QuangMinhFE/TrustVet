@@ -102,7 +102,11 @@ h5 {
 .menu-list {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 20px;
+}
+
+.menu-item {
+  position: relative;
 }
 
 .menu-item-link {
@@ -298,4 +302,70 @@ h5 {
 
 .contact-icon i:not(:first-child) {
   margin-left: 5px;
+}
+
+/* LIST */
+.list {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 140px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  color: #8e1b1e;
+  border-radius: 5px;
+  display: none;
+}
+
+.list::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.item {
+  padding: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.item:hover {
+  color: #fff;
+  background-color: #8e1b1e;
+}
+
+.item:first-child {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.menu-item:nth-child(3):hover .list {
+  display: block;
+}
+
+.header-gif {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  transform: translateY(-38%);
+  animation: run 8s linear 0s infinite normal forwards;
+}
+
+@keyframes run {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
